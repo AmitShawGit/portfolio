@@ -754,17 +754,21 @@ nav {
         }
     }
 
-    .education{
-        .flex-column{
-            flex-direction: row;
-            
+    .education {
+        .flex-column {
+            flex-direction: row !important;
+            margin-bottom: 1rem;
+
+            .nav-item {
+                width: 50%;
+            }
         }
     }
 
 }
 
 
-@media (max-width:575.5px) {
+@media (max-width:576.5px) {
     .hero-section {
         .pos-relative {
             .js {
@@ -776,7 +780,31 @@ nav {
             }
         }
     }
+
+    .experiences {
+
+        .flow {
+
+            .flow_line {
+                margin-left: 0rem;
+
+            }
+
+
+        }
+
+        .flow2 {
+            .flow_line {
+                &::before {
+                    height: 417px;
+                    top: -13.5rem;
+                }
+            }
+        }
+    }
 }
+
+
 
 
 
@@ -790,6 +818,18 @@ nav {
 
         }
     }
+
+    .experiences {
+        & .flow2 {
+            & .flow_line {
+                &::before {
+                    height: 458px;
+                    top: -18.5rem;
+                }
+            }
+        }
+    }
+
 }
 
 
@@ -806,6 +846,17 @@ nav {
             }
         }
     }
+ .experiences {
+        & .flow2 {
+            & .flow_line {
+                &::before {
+                    height: 458px;
+                    top: -18.9rem;
+                }
+            }
+        }
+    }
+    
 }
 
 
@@ -820,6 +871,17 @@ nav {
             .js {
                 top: 21%;
                 width: 50px;
+            }
+        }
+    }
+
+    .experiences {
+        & .flow2 {
+            & .flow_line {
+                &::before {
+                    height: 544px;
+                    top: -23.9rem;
+                }
             }
         }
     }
