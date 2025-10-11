@@ -542,7 +542,7 @@ nav {
         position: absolute;
         right: 25%;
         top: -2%;
-        animation: bounce 2s infinite;
+        animation: bounce 0.8s infinite;
     }
 
     .nodejs {
@@ -550,14 +550,14 @@ nav {
         position: absolute;
         left: 0%;
         bottom: 25%;
-        animation: bounce 2s infinite;
+        animation: bounce 0.8s infinite;
     }
 
     .reactjs {
         position: absolute;
         top: 5%;
         left: 5%;
-        animation: bounce 2s infinite;
+        animation: bounce 0.8s infinite;
     }
 }
 
@@ -569,23 +569,22 @@ nav {
 
 @keyframes bounce {
 
-    /* animation: bounce 2s infinite; */
+
     0%,
     100% {
         transform: translateY(0);
-        /* Starting and ending position */
+
         animation-timing-function: ease-in;
-        /* Faster fall */
+
     }
 
     50% {
         transform: translateY(-5px);
-        /* Lowest point of the bounce */
+
         animation-timing-function: ease-out;
-        /* Slower rebound */
+
     }
 }
-
 
 @media (max-width:1199.5px) {
     .hero-section {
@@ -702,11 +701,21 @@ nav {
         & .container {
             & .educational_details {
                 & li {
+
+
                     &::before {
-                        height: 162px;
+                        height: 143px;
 
                         top: 45px;
                         left: -22px;
+                    }
+
+                    h5 {
+                        font-size: 18px;
+                    }
+
+                    p {
+                        font-size: 13px;
                     }
                 }
             }
@@ -736,9 +745,36 @@ nav {
             }
         }
     }
+
+
+    .education {
+        .d-flex {
+            align-items: center;
+        }
+
+        & .container {
+            & .educational_details {
+                & li {
+                    &::before {
+                        height: 136px;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact {
+        padding: 1rem 0;
+    }
+
+    .education {
+        padding: 5rem 0 5rem 0;
+    }
+
+    .experiences {
+        padding-bottom: 5rem;
+    }
 }
-
-
 
 @media (max-width: 767.5px) {
     .hero-section {
@@ -766,7 +802,6 @@ nav {
     }
 
 }
-
 
 @media (max-width:576.5px) {
     .hero-section {
@@ -804,10 +839,6 @@ nav {
     }
 }
 
-
-
-
-
 @media (max-width:520.5px) {
     .hero-section {
         .pos-relative {
@@ -832,8 +863,6 @@ nav {
 
 }
 
-
-
 @media (max-width:475.5px) {
     .hero-section {
         .pos-relative {
@@ -846,19 +875,36 @@ nav {
             }
         }
     }
- .experiences {
+
+    .experiences {
         & .flow2 {
             & .flow_line {
                 &::before {
-                    height: 458px;
+                    height: 491px;
                     top: -18.9rem;
                 }
             }
         }
     }
-    
-}
 
+
+    .education {
+        & .container {
+            & .educational_details {
+                & li {
+                    padding: 0.5rem;
+
+                    &::before {
+                        height: 127px;
+                        top: 30px;
+                        left: -22px;
+                    }
+                }
+            }
+        }
+    }
+
+}
 
 @media (max-width:420px) {
     .hero-section {
@@ -873,6 +919,8 @@ nav {
                 width: 50px;
             }
         }
+
+        padding-bottom: 0rem;
     }
 
     .experiences {
@@ -886,6 +934,46 @@ nav {
         }
     }
 
+    .education {
+        & .container {
+            & .educational_details {
+                & li {
+                    h5 {
+                        font-size: 13px;
+                    }
+
+                    h6 {
+                        font-size: 12px;
+                    }
+
+                    p {
+                        font-size: 11px;
+                    }
+
+                    .education {
+
+                        &::before {
+                            height: 114px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:414.5px) {
+    .education {
+        & .container {
+            & .educational_details {
+                & li {
+                    &::before {
+                        height: 117px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width:390px) {
@@ -910,6 +998,32 @@ nav {
                 width: 51px;
 
                 bottom: 34%;
+            }
+        }
+    }
+
+
+    .experiences {
+        & .flow2 {
+            & .flow_line {
+                &::before {
+                    height: 575px;
+                    top: -25.9rem;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width:360.5px) {
+    .experiences {
+        & .flow2 {
+            & .flow_line {
+                &::before {
+                    height: 609px;
+                    top: -27.9rem;
+                }
             }
         }
     }
