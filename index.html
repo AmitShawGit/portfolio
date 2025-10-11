@@ -15,6 +15,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amit's Portfolio</title>
+
+
+    <title>Amit's Portfolio</title>
+    <meta name="description"
+        content="Stop searching for a developer. Start searching for a solution.
+
+       I'm Amit Shaw, and my business is building digital assets that solve specific problems—whether that's automating a workflow for a client or engineering a faster API for a large-scale application. If you need a website that works and scales, you've found your partner.">
+
+
+    <meta property="og:url" content="https://amitshawgit.github.io/porfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Amit's Portfolio">
+    <meta property="og:description"
+        content="Stop searching for a developer. Start searching for a solution.
+
+         I'm Amit Shaw, and my business is building digital assets that solve specific problems—whether that's automating a workflow for a client or engineering a faster API for a large-scale application. If you need a website that works and scales, you've found your partner.">
+    <meta property="og:image" content="Full Stack Web Developer">
+
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="amitshawgit.github.io">
+    <meta property="twitter:url" content="https://amitshawgit.github.io/porfolio">
+    <meta name="twitter:title" content="Amit's Portfolio">
+    <meta name="twitter:description"
+        content="Stop searching for a developer. Start searching for a solution.
+
+       I'm Amit Shaw, and my business is building digital assets that solve specific problems—whether that's automating a workflow for a client or engineering a faster API for a large-scale application. If you need a website that works and scales, you've found your partner.">
+    <meta name="twitter:image"
+        content="Stop searching for a developer. Start searching for a solution.
+
+       I'm Amit Shaw, and my business is building digital assets that solve specific problems—whether that's automating a workflow for a client or engineering a faster API for a large-scale application. If you need a website that works and scales, you've found your partner.">
+
+
     <!-- Bootstrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -48,7 +81,7 @@
                     <li><a href="#educations">Education</a></li>
                     <li><a href="#projects">Projects</a></li>
                 </ul>
-                <button class="btn download_resume"><i class="ri-download-line"></i> Download Resume</button>
+                <button class="btn download_resume" onclick="openResume()"><i class="ri-download-line"></i> Download Resume</button>
             </div>
 
             <i class="ri-menu-line menu_bar" onclick="openSidebar()"></i>
@@ -511,7 +544,7 @@
                 <li><a href="#educations">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
             </ul>
-            <button class="btn download_resume"><i class="ri-download-line"></i> Download Resume</button>
+            <button class="btn download_resume" onclick="openResume()"><i class="ri-download-line"></i> Download Resume</button>
         </div>
 
     </aside>
@@ -534,6 +567,8 @@
         integrity="sha512-9CWGXFSJ+/X0LWzSRCZFsOPhSfm6jbnL+Mpqo0o8Ke2SYr8rCTqb4/wGm+9n13HtDE1NQpAEOrMecDZw4FXQGg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!-- measurement_id:G-ETC7RYVW23 -->
+    <!-- stream_id:G-12278440898 -->
 
     <script>
 
@@ -595,6 +630,10 @@
 
         }
 
+
+        function openResume(){
+            window.open('/Resume_Amit.pdf', '_blank')
+        }
     </script>
 
 </body>
